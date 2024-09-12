@@ -3,12 +3,12 @@
 @tailwind utilities;
 
 :root {
-  @apply font-['Geist']
+  @apply font-main;
 }
 
 @layer base {
   h1 {
-    @apply text-4xl tracking-[0.38em] font-medium;
+    @apply text-4xl tracking-[0.38em] font-medium theme-animation;
   }
 
   @font-face {
@@ -16,9 +16,13 @@
     font-style: normal;
     src: url(../fonts/GeistVF.woff2) format('woff2');
   }
+
 }
 
 @layer components {
+  .theme-animation {
+    @apply transition-colors duration-700;
+  }
 }
 
 

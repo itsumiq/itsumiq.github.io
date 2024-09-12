@@ -7,13 +7,24 @@ export default {
   theme: {
     extend: {
       fontSize: {
+        'lg': '1.125rem',
         '4xl': '2.5rem',
       },
       colors: {
         black: {
           primary: '#090909',
+          secondary: '#131313',
         },
+        gray: {
+          primary: '#565656',
+          light: '#AAAAAA',
+        },
+        milk: '#FAFAFA',
+        pink: '#CF73C6',
       },
+      fontFamily: {
+        main: 'Geist',
+      }
     },
   },
   darkMode: 'selector',

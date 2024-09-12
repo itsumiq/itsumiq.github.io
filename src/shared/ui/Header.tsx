@@ -8,11 +8,11 @@ export const Header = () => {
   const themeElem =
     theme === 'dark' ? (
       <button onClick={() => setTheme('light')}>
-        <Moon size="1.75rem" />
+        <Moon size="1.75rem" className="theme-animation" />
       </button>
     ) : (
       <button onClick={() => setTheme('dark')}>
-        <Sun size="1.75rem" />
+        <Sun size="1.75rem" className="theme-animation" />
       </button>
     );
 
