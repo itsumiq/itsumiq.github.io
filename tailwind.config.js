@@ -5,8 +5,18 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontSize: {
+        '4xl': '2.5rem',
+      },
+      colors: {
+        black: {
+          primary: '#090909',
+        },
+      },
+    },
   },
+  darkMode: 'selector',
   plugins: [],
 }
 

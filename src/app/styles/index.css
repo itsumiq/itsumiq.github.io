@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  @apply font-['Geist']
+}
+
+@layer base {
+  h1 {
+    @apply text-4xl tracking-[0.38em] font-medium;
+  }
+
+  @font-face {
+    font-family: 'Geist';
+    font-style: normal;
+    src: url(../fonts/GeistVF.woff2) format('woff2');
+  }
+}
+
+@layer components {
+}
+
+
