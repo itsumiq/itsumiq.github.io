@@ -8,7 +8,9 @@ export function Home() {
       <Header />
       <main className="flex flex-col gap-5">
         <AddTodo />
-        <TodosList />
+        <div className="flex flex-col">
+          <TodosList></TodosList>
+        </div>
       </main>
     </div>
   );

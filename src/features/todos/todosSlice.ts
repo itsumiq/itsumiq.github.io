@@ -1,16 +1,16 @@
 import { createSlice } from '@reduxjs/toolkit';
 import { nanoid } from '@reduxjs/toolkit';
 import { PayloadAction } from '@reduxjs/toolkit';
-import { InitialTodoState } from '../../shared/types';
+import { TodoState } from '../../shared/types';
 
-const initialState: InitialTodoState[] = [];
+const initialState: TodoState[] = [];
 
 const todosSlice = createSlice({
   name: 'todos',
   initialState,
   reducers: {
     addTodo: {
-      reducer: (state, action: PayloadAction<InitialTodoState>) => {
+      reducer: (state, action: PayloadAction<TodoState>) => {
         state.push(action.payload);
       },
       prepare: (title: string) => ({

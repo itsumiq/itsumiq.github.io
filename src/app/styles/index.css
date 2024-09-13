@@ -23,6 +23,10 @@
   .theme-animation {
     @apply transition-colors duration-700;
   }
+
+  .text-1 {
+    @apply text-lg font-normal;
+  }
 }
 
 

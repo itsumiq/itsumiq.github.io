@@ -1,4 +1,4 @@
-export interface InitialTodoState {
+export interface TodoState {
   title: string;
   id: string;
   status: boolean;

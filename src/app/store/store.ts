@@ -1,7 +1,6 @@
 import { todoReducer } from '../../features/todos';
 
 import { configureStore } from '@reduxjs/toolkit';
-import { useDispatch } from 'react-redux';
 import {
   persistStore,
   persistReducer,
@@ -15,8 +14,10 @@ import {
 import storage from 'redux-persist/lib/storage';
 import { combineReducers } from 'redux';
 
+// store settings
+
 const rootReducer = combineReducers({
-  reducer: todoReducer,
+  todo: todoReducer,
 });
 
 const persistConfig = {
@@ -38,5 +39,7 @@ export const store = configureStore({
 
 export const persistor = persistStore(store);
 
-type AppDispatch = typeof store.dispatch;
-export const useAppDispatch = useDispatch.withTypes<AppDispatch>();
+// export type
+
+export type RootState = ReturnType<typeof store.getState>;
+export type AppDispatch = typeof store.dispatch;
