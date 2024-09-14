@@ -30,7 +30,10 @@ export default {
       },
       fontFamily: {
         main: 'Geist',
-      }
+      },
+      transitionProperty: {
+        textStatus: 'color, text-decoration-line, background-color, border-color, text-decoration-color',
+      },
     },
   },
   darkMode: 'selector',

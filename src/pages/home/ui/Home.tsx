@@ -6,11 +6,9 @@ export function Home() {
   return (
     <div className="m-[0_auto] grid h-full w-[41.625rem] grid-rows-[auto_1fr_auto] gap-[1.55rem] pt-[3.65rem]">
       <Header />
-      <main className="flex flex-col gap-5">
+      <main className="flex flex-col">
         <AddTodo />
-        <div className="flex flex-col">
-          <TodosList></TodosList>
-        </div>
+        <TodosList />
       </main>
     </div>
   );
