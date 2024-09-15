@@ -1,6 +1,7 @@
 import { Header } from '../../../shared/ui';
 import { AddTodo } from '../../../features/todos';
 import { TodosList } from '../../../features/todos';
+import { Filter } from './Filter';
 
 export function Home() {
   return (
@@ -9,6 +10,7 @@ export function Home() {
       <main className="flex flex-col">
         <AddTodo />
         <TodosList />
+        <Filter />
       </main>
     </div>
   );

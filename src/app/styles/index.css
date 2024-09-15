@@ -23,6 +23,7 @@
   .theme-animation {
     @apply transition-colors duration-700;
   }
+  /* text */
 
   .text-animation {
     @apply transition-textStatus duration-700;
@@ -32,12 +33,24 @@
     @apply text-lg font-normal;
   }
 
+  .text-2 {
+    @apply text-base font-normal dark:text-gray-primary text-gray-light theme-animation dark:hover:text-white hover:text-black-primary;
+  }
+
+  /* inputs */
+
   .checkbox {
     @apply appearance-none size-7 theme-animation  rounded-full border border-gray-light hover:border-pink dark:border-gray-primary;
   }
 
   .checkbox-checked {
     @apply checked:border-pink checked:before:content-[""] checked:before:size-[0.563rem] checked:before:bg-pink checked:before:rounded-[0.125rem] checked:bg-pink;
+  }
+
+  /* components */
+
+  .filter {
+    @apply border-t dark:border-gray-dark border-white-light;
   }
 }
 

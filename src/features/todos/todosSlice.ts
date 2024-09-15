@@ -36,8 +36,13 @@ const todosSlice = createSlice({
 
       return state;
     },
+    clearTodos: (state) => {
+      state = [];
+
+      return state;
+    },
   },
 });
 
-export const { addTodo, todoStatus, deleteTodo } = todosSlice.actions;
+export const { addTodo, todoStatus, deleteTodo, clearTodos } = todosSlice.actions;
 export const todoReducer = todosSlice.reducer;
