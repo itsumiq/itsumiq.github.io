@@ -1,5 +1,4 @@
 import { useAppSelector } from '../../../app/store/reduxHooks';
-import { useEffect, useRef } from 'react';
 import { useParams } from 'react-router-dom';
 import { useAppDispatch } from '../../../app/store/reduxHooks';
 
@@ -10,24 +9,12 @@ import { currentTodos } from '../../../shared/lib';
 
 export const Filter = () => {
   const todoLength = currentTodos(useAppSelector((state) => state.todo)).length;
-  const filterRef = useRef<HTMLDivElement | null>(null);
   const dispatch = useAppDispatch();
   const { filter: filterPath = 'all' } = useParams();
 
-  useEffect(() => {
-    if (todoLength < 6 && filterRef.current) {
-      filterRef.current.classList.add('filter');
-    }
-
-    return () => {
-      filterRef.current?.classList.remove('filter');
-    };
-  }, [todoLength, filterPath]);
-
   return (
     <div
-      className="theme-animation flex h-14 w-full items-center justify-between rounded-b bg-milk px-7 dark:bg-black-secondary"
-      ref={filterRef}
+      className={`theme-animation flex h-14 w-full items-center justify-between rounded-b border-white-light bg-milk px-7 dark:border-gray-dark dark:bg-black-secondary ${todoLength < 6 ? 'border-t' : ''}`}
     >
       <span className="text-2">{todoLength} items left</span>
       <ul className="flex gap-[1.625rem]">

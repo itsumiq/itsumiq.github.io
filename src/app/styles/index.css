@@ -49,9 +49,7 @@
 
   /* components */
 
-  .filter {
-    @apply border-t dark:border-gray-dark border-white-light;
-  }
+  
 }
 
 
