@@ -12,7 +12,7 @@ export const TodosList = () => {
   let todos = currentTodos(useAppSelector((state) => state.todo));
 
   return (
-    <ul className="theme-animation mt-[2.25rem] grid h-[24.375rem] w-full auto-rows-[4rem] gap-y-px overflow-scroll rounded-t bg-milk dark:bg-black-secondary">
+    <ul className="theme-animation max-phone:h-[35.714rem] max-phone:mt-0 max-phone:rounded mt-[2.25rem] grid h-[24.375rem] w-full auto-rows-[4rem] gap-y-px overflow-scroll rounded-t bg-milk dark:bg-black-secondary">
       {todos.map(({ id, status, title }) => (
         <li key={id}>
           <div className="group flex h-full items-center justify-between px-7">

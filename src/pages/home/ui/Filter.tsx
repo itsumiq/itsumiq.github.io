@@ -14,7 +14,7 @@ export const Filter = () => {
 
   return (
     <div
-      className={`theme-animation flex h-14 w-full items-center justify-between rounded-b border-white-light bg-milk px-7 dark:border-gray-dark dark:bg-black-secondary ${todoLength < 6 ? 'border-t' : ''}`}
+      className={`theme-animation flex h-[4rem] w-full items-center justify-between rounded-b border-white-light bg-milk px-7 dark:border-gray-dark dark:bg-black-secondary ${todoLength < 6 ? 'border-t' : ''} max-phone:border-none max-phone:rounded`}
     >
       <span className="text-2">{todoLength} items left</span>
       <ul className="flex gap-[1.625rem]">

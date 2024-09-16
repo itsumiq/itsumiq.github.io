@@ -11,7 +11,7 @@ export const Checkbox = ({ checked, onClick, id }: CheckboxProps) => {
     <div className="relative flex items-center">
       <Check
         size="1rem"
-        className={`absolute left-[6px] top-[6px] ${checked ? 'block' : 'hidden'} cursor-pointer text-white transition-all duration-700`}
+        className={`absolute left-[0.375rem] top-[0.375rem] ${checked ? 'block' : 'hidden'} cursor-pointer text-white transition-all duration-700`}
         id={id}
         onClick={onClick}
       />

@@ -1,5 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  future: {
+    hoverOnlyWhenSupported: true,
+  },
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
@@ -33,6 +36,10 @@ export default {
       },
       transitionProperty: {
         textStatus: 'color, text-decoration-line, background-color, border-color, text-decoration-color',
+      },
+      screens: {
+        phone: '501px',
+        sm: '701px',
       },
     },
   },
