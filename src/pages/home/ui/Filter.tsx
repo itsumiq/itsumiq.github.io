@@ -14,10 +14,10 @@ export const Filter = () => {
 
   return (
     <div
-      className={`theme-animation flex h-[4rem] w-full items-center justify-between rounded-b border-white-light bg-milk px-7 dark:border-gray-dark dark:bg-black-secondary ${todoLength < 6 ? 'border-t' : ''} max-phone:border-none max-phone:rounded`}
+      className={`theme-animation flex h-[4rem] w-full items-center justify-between rounded-b border-white-light bg-milk px-7 dark:border-gray-dark dark:bg-black-secondary ${todoLength < 6 ? 'border-t' : ''} max-phone:rounded max-phone:border-none`}
     >
       <span className="text-2">{todoLength} items left</span>
-      <ul className="flex gap-[1.625rem]">
+      <ul className="flex gap-[1.625rem] max-phone:gap-[1.4rem]">
         <li>
           <Link to="all" className={`text-2 ${filterPath === 'all' ? 'text-pink' : ''}`}>
             All

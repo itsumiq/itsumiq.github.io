@@ -33,7 +33,7 @@
   }
 
   .text-2 {
-    @apply text-base font-normal dark:text-gray-primary text-gray-light theme-animation dark:hover:text-white hover:text-black-primary;
+    @apply text-base font-normal dark:text-gray-primary text-gray-light theme-animation dark:hover:text-white hover:text-black-primary max-phone:text-lg;
   }
 
   .text-3 {
