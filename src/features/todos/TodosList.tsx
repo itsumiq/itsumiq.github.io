@@ -19,7 +19,7 @@ export const TodosList = () => {
             <div className="flex gap-x-5">
               <Checkbox checked={status} id={id} onClick={() => dispatch(todoStatus(id))} />
               <label
-                className={`text-1 cursor-point theme-textStatus ${status ? 'text-gray-light line-through dark:text-gray-primary' : 'no-underline'}`}
+                className={`text-1 cursor-point theme-textStatus ${status ? 'text-gray-light line-through dark:text-gray-primary' : 'no-underline'} w-[33.125rem] overflow-hidden text-ellipsis whitespace-nowrap max-phone:w-[23.571rem]`}
                 htmlFor={id}
               >
                 {title}

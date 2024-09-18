@@ -8,8 +8,10 @@ export const AddTodo = () => {
   const dispatch = useAppDispatch();
 
   const handleActionAdd = () => {
-    dispatch(addTodo(currentValue));
-    setCurrentValue('');
+    if (currentValue.length !== 0) {
+      dispatch(addTodo(currentValue));
+      setCurrentValue('');
+    }
   };
 
   return (

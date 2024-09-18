@@ -43,7 +43,7 @@ export default {
       },
     },
   },
-  darkMode: 'selector',
+  darkMode: 'media',
   plugins: [],
 }
 
